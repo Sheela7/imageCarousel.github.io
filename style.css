@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  width: 1080px;
+  height: 500px;
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  position: relative;
+}
+.carousel-track-container {
+  width: 1000px;
+  height: 500px;
+  background: black;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+.carousel-image-wrapper {
+  width: 1000px;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  position: relative;
+  transition: transform 1000ms ease-in;
+}
+.carousel-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.carousel-button {
+  /* object-fit: cover; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+.carousel-button.previous {
+  left: 2px;
+}
+.carousel-button.next {
+  right: 2px;
+}
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.carousel-indicator.current-slide {
+  background: rgba(0, 0, 0, 0.75);
+}
